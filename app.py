@@ -17,6 +17,7 @@ def index():
             model="text-davinci-003",
             prompt=generate_prompt(food),
             temperature=0.6,
+            max_tokens=30,
         )
         return redirect(url_for("index", result=response.choices[0].text))
 
