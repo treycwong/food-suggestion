@@ -3,11 +3,11 @@ import os
 import openai
 from flask import Flask, redirect, render_template, request, url_for
 
-api_key = os.environ.get('OPENAI_API_KEY')
+# api_key = os.environ.get('OPENAI_API_KEY')
 
 app = Flask(__name__)
-openai.api_key = os.getenv("api_key")
-
+# openai.api_key = os.getenv("api_key")
+openai.api_key = os.environ.get('OPENAI_API_KEY')
 
 @app.route("/", methods=("GET", "POST"))
 def index():
