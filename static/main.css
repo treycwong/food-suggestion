@@ -72,3 +72,26 @@ input[type="submit"] {
   position: absolute;
   bottom: 10px;
 }
+
+@media screen and (max-width: 480px) {
+  h3 {
+    font-size: 36px;
+    text-align: center;
+  }
+  .footer {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    padding-top: 40px;
+  }
+  h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .icon {
+    width: 200px;
+  }
+}

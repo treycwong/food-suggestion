@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
   <title>Food Suggestion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link
     rel="shortcut icon"
     href="{{ url_for('static', filename='nasi-goreng.png') }}"
@@ -10,7 +11,7 @@
 
 <body>
   <img src="{{ url_for('static', filename='nasi-goreng-mj-250.png') }}" class="icon" />
-  <h3>Malaysian Food Suggestion</h3>
+  <h3>Malaysian Food Suggestions</h3>
   <form action="/" method="post">
     <input type="text" name="food" placeholder="What do you like.." required />
     <input type="submit" value="Suggest Me" />
