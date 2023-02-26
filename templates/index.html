@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <head>
-  <title>OpenAI Quickstart</title>
+  <title>Food Suggestion</title>
   <link
     rel="shortcut icon"
-    href="{{ url_for('static', filename='dog.png') }}"
+    href="{{ url_for('static', filename='nasi-goreng.png') }}"
   />
   <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
 </head>
 
 <body>
-  <img src="{{ url_for('static', filename='dog.png') }}" class="icon" />
-  <h3>Name my pet</h3>
+  <img src="{{ url_for('static', filename='nasi-goreng-mj-250.png') }}" class="icon" />
+  <h3>Malaysian Food Suggestion</h3>
   <form action="/" method="post">
-    <input type="text" name="animal" placeholder="Enter an animal" required />
-    <input type="submit" value="Generate names" />
+    <input type="text" name="food" placeholder="What do you like.." required />
+    <input type="submit" value="Suggest Me" />
   </form>
   {% if result %}
   <div class="result">{{ result }}</div>
