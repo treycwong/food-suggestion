@@ -84,7 +84,6 @@ input[type="submit"] {
 .footer {
   position: absolute;
   bottom: 10px;
-  margin-top: 20px;
 }
 
 @media screen and (max-width: 480px) {
@@ -101,11 +100,12 @@ input[type="submit"] {
 
 @media screen and (max-width: 375px) {
   body {
-    padding-top: 40px;
+    padding-top: 10px;
   }
   h3 {
     font-size: 28px;
     text-align: center;
+    margin-top: 0px;
     margin-bottom: 15px;
   }
   .icon {
@@ -113,6 +113,6 @@ input[type="submit"] {
   }
   .result {
     font-size: 14px;
-    margin-top: 25px;
+    margin-top: 20px;
   }
 }
